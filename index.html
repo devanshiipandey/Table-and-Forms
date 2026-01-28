@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+
+    <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+    </style>
+</head>
+
+<body>
+
+    <form>
+    <h1>Pizza Ordering Form</h1>
+
+    <!--contact info-->
+    <h2><br>Contact Information<br></h2>
+
+    <label for = "inName">Name:</label>
+    <input type = "text" name="inName" id="inName" required>
+
+    <label for = "inPhone"><br>Phone:</label>
+    <input type = "tel" name="inPhone" id="inPhone" required>
+
+    <label for = "inEmail"><br>Email:</label>
+    <input type = "email" name="inEmail" id="inEmail" required>
+
+
+    <!--size-->
+    <h2>Select Pizza Size</h2>
+
+    <label for = "pizzaSize">Pizza Size: </label>
+    <select name = "pizzaSize" id="pizzaSize" required>
+        <option value = "">Select Size</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>X Large</option>
+    </select>
+
+    <!--sauce-->
+    <h2> Select Sauce </h2>
+
+    <input type = "radio" name = "sauce" required> <label>Marinara</label><br>
+    <input type = "radio" name = "sauce" required> <label> Ranch </label> <br>
+    <input type = "radio" name = "sauce" required> <label> No Sauce </label> <br>
+
+    <!--toppings-->
+    <h2> Select Toppings </h2>
+
+    <input type ="checkbox" name="toppings"> <label>Pepperoni</label>
+    <input type ="checkbox" name="toppings"> <label>Sausage</label><br>
+    <input type ="checkbox" name="toppings"> <label>Mushroom</label>
+    <input type ="checkbox" name="toppings"> <label>Pinapple</label><br>
+    <input type ="checkbox" name="toppings"> <label>Peppers</label>
+    <input type ="checkbox" name="toppings"> <label>Onions</label>
+
+    <!--additional instructions-->
+    <h2>Additional Instructions</h2>
+
+    <textarea name = "comments">Add instructions</textarea><br>
+
+    <!--submit-->
+    <input type = "submit" value = "Submit">
+
+    </form>
+
+    <!--table-->
+    <p>List of My Favorite Games</p>
+    
+
+
+    <table style = "width: 30%">
+        <tr>
+            <th>Developer</th>
+            <th>Title</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Bungie</td>
+            <td>Halo</td>
+            <td>2001</td>
+        </tr>
+        <tr>
+            <td>Halo 2</td>
+            <td>2007</td>
+        </tr>
+        <tr>
+            <td>Halo 3</td>
+            <td>2007</td>
+        </tr>
+
+        <tr>
+            <td>Mojang</td>
+            <td>Minecraft</td>
+            <td>2011</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Count: 4</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
